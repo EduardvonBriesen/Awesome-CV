@@ -1,0 +1,229 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+\definecolor{awesome}{HTML}{00883A}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{bewerbungsfoto}
+\name{Eduard}{von Briesen}
+\position{B.Sc. Informatik}
+\address{Am Hang 1, 85567 Grafing}
+
+\mobile{(+49) 1575 7334727}
+\email{e.v.briesen@gmail.com}
+%\homepage{www.posquit0.com}
+\github{EduardvonBriesen}
+%\linkedin{Niklas Mamtschur}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+{\today}
+{Motivationsschreiben}
+{Eduard von Briesen}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Ausbildung}
+\begin{cventries}
+
+  %---------------------------------------------------------
+  \cventry
+  {B.Sc. Informatik} % Degree
+  {Technische Universität München} % Institution
+  {München, Deutschland} % Location
+  {Okt. 2017 - Feb. 2022} % Date(s)
+  {}
+
+  \cventry
+  {Allgemeine Hochschulreife} % Degree
+  {Gymnasium Grafing} % Institution
+  {Grafing, Deutschland} % Location
+  {Sep. 2009 - Mai 2017} % Date(s)
+  {}
+
+  %---------------------------------------------------------
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Skills}
+\begin{cvskills}
+
+  %---------------------------------------------------------
+  \cvskill
+  {Programmier Sprachen} % Category
+  {JAVA, Rust, Haskell, Python, JavaScript} % Skills
+
+  %---------------------------------------------------------
+  \cvskill
+  {DevOps} % Category
+  {Docker, Kubernetes, Helm} % Skills
+
+  %---------------------------------------------------------
+  \cvskill
+  {Back-end} % Category
+  {SpringBoot, REST API} % Skills
+
+  %---------------------------------------------------------
+  \cvskill
+  {Front-end} % Category
+  {Angular, React, Redux} % Skills
+
+  %---------------------------------------------------------
+  \cvskill
+  {Sprachkenntnisse} % Category
+  {Deutsch, Englisch} % Skills
+
+  %---------------------------------------------------------
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Erfahrung}
+\begin{cventries}
+
+  %---------------------------------------------------------
+  \cventry
+  {Werkstudent} % Job title
+  {adesso SE} % Organization
+  {München, Deutschland} % Location
+  {Seit Okt. 2017} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Forschung an innovativen Konzepten zur Analyse von Log-Daten aus verteilten Systemen}
+      \item {Automatisierung des Deployments containerisierten Microservices auf Kubernetes mit Helm}
+      \item {Entwicklung von Diensten mit SpringBoot zum konsumieren externer APIs}
+      \item {Design und Umsetzung eines Frontends auf Angular Basis}
+      \item {Schulung im JavaScript Framework React mit Redux}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Allrounder} % Job title
+  {Käfer Service GmbH} % Organization
+  {München, Deutschland} % Location
+  {Seit Sep. 2017} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Küchenhilfe in Imbisstationen und/oder Outlets, sowie in der Hauptküche}
+      \item {Imbissleitung bei Messen und Veranstaltungen}
+      \item {Zapfer am Getränkeausschank im "AUDI Dome" und externen Veranstaltungen}
+      \item {Kassenkraft während Messen und Kongressen/Ausstellungen}
+      \item {Food-Presenter im "AUDI Dome" VIP-Bereich und Großveranstaltungen}
+      \item {Digitalisierung von Daten für den Geschäftsführer und Unterstützung für die Großveranstaltung "BAUMA"}
+    \end{cvitems}
+  }
+
+  \cventry
+  {Praktikant} % Job title
+  {DIE SOFTWARE Peter Fitzon GmbH} % Organization
+  {Ebersberg, Deutschland} % Location
+  {Apr. 2014} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of tasks/responsibilities
+      \item {Einführung in HTML, CSS, PHP, SQL}
+    \end{cvitems}
+  }
+
+  %---------------------------------------------------------
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Freizeit}
+\begin{cventries}
+
+  %---------------------------------------------------------
+  \cventry
+  {Aktives Mitglied} % Affiliation/role
+  {Judo Team Grafing} % Organization/group
+  {Grafing, Deutschland} % Location
+  {Seit. 2010} % Date(s)
+  {
+    \begin{cvitems} % Description(s) of experience/contributions/knowledge
+      \item {Mitgestaltung des Trainingsbetriebs als lizenzierter Trainer}
+      \item {Leitung von Jugendförderprogrammen als Vorstand des Fördervereins}
+      \item {Aktiver Athlet in der Landesliga Mannschaft}
+    \end{cvitems}
+  }
+
+  %---------------------------------------------------------
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
